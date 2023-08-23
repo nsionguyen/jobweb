@@ -87,14 +87,14 @@ function themviec (linkanh, a, title2, luong, diadiem) {
     timviec.appendChild(div);
 }
 
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 40 triệu', 'Hà Nội');
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 20 triệu', 'Thành Phố Hồ Chí Minh');
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
-themviec('itemsvieclam1.webp', 'test test', 'là title', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
+themviec('itemsvieclam1.webp', 'kỹ thuật viên', 'Mercedes', 'lên tới 40 triệu', 'Hà Nội');
+themviec('itemsvieclam1.webp', 'Tư vấn viên', 'Mercedes', 'lên tới 20 triệu', 'Thành Phố Hồ Chí Minh');
+themviec('itemsvieclam1.webp', 'Kỹ thuật viên', 'Mercedes', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
+themviec('itemsvieclam1.webp', 'nhân viên sale', 'Mercedes', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
+themviec('itemsvieclam1.webp', 'nhân viên sale', 'Mercedes', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
+themviec('itemsvieclam1.webp', 'kỹ thuật viên', 'Mercedes', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
+themviec('itemsvieclam1.webp', 'nhân viên sale', 'Mercedes', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
+themviec('itemsvieclam1.webp', 'nhân viên sale', 'Mercedes', 'lên tới 40 triệu', 'Thành Phố Hồ Chí Minh');
 
 
 
