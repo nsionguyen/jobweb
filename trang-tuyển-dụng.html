@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #ff00a9, #4900ff, #00ffd5, #ff0084, #f0f);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .column {
+            flex-basis: 48%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display:block;
+        }
+
+        .column h2 {
+            margin-top: 0;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        .job-details {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .company-info {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .company-details {
+            margin-bottom: 10px;
+        }
+
+        .job-description{
+            display:block;
+            margin-top: 20px;
+        }
+
+        .job-description-container {
+        
+        padding: 20px; /* Add padding for spacing inside the container */
+        border-radius: 5px; /* Add border-radius for rounded corners */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+        margin-top: 20px; /* Add some space at the top */
+    }
+
+    .apply-button {
+        text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h2><i class="fas fa-suitcase icon"></i>Mảng Du Lịch, Làm Việc Tại Hà Nội - Hồ Chí Minh</h2>
+            <div class="job-details">
+                <i class="fas fa-dollar-sign icon"></i>Mức lương: Tới 20 triệu
+            </div>
+            <div class="job-details">
+                <i class="fas fa-map-marker-alt icon"></i>Địa điểm: Hồ Chí Minh, Hà Nội
+            </div>
+            <div class="job-details">
+                <i class="fas fa-briefcase icon"></i>Kinh nghiệm: Không yêu cầu kinh nghiệm
+            </div>
+            <div class="job-details">
+                <i class="fas fa-calendar-alt icon"></i>Hạn nộp hồ sơ: 23/08/2023
+            </div>
+            <a href="./formdangki.html" class="apply-button"><i class="fas fa-check icon"></i>Ứng tuyển ngay</a>
+            <a href="#" class="save-button"><i class="far fa-heart icon"></i>Lưu tin</a>
+        </div>
+
+
+
+
+
+
+        <div class="column">
+            <h2><i class="fas fa-building icon"></i>CÔNG TY TNHH HOLIDAYS VIỆT NAM</h2>
+            <img src="https://cdn-new.topcv.vn/unsafe/80x/filters:format(webp)/https://static.topcv.vn/company_logos/699b0dece21a74c8527a13fc98c80e02-62d3b8f35d148.jpg" alt="Company Logo" class="logo">
+            <div class="company-details">
+                <i class="fas fa-users icon"></i>Quy mô: 25-99 nhân viên
+            </div>
+            <div class="company-details">
+                <i class="fas fa-map-marker-alt icon"></i>Địa điểm: Số 5 Lê Quý Đôn, Phường Võ Thị Sáu, Quận 3, Hồ Chí Minh
+            </div>
+            <button class="apply-button">  <a href="#" class="view-company"><i class="fas fa-external-link-alt icon"></i>Xem trang công ty</a> </button>
+            <div class="company-info">
+                <div class="company-details">
+                    <i class="fas fa-user-tie icon"></i>Cấp bậc: Nhân viên
+                </div>
+                <div class="company-details">
+                    <i class="fas fa-briefcase icon"></i>Kinh nghiệm: Không yêu cầu kinh nghiệm
+                </div>
+                <div class="company-details">
+                    <i class="fas fa-users icon"></i>Số lượng tuyển: 10 người
+                </div>
+                <div class="company-details">
+                    <i class="far fa-clock icon"></i>Hình thức làm việc: Toàn thời gian
+                </div>
+                <div class="company-details">
+                    <i class="fas fa-venus-mars icon"></i>Giới tính: Không yêu cầu
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="job-description-container"> 
+    <div class="job-description">
+        <h2>Chi tiết tin tuyển dụng</h2>
+        <p>
+            - Tư vấn khách hàng, giới thiệu sản phẩm, dịch vụ du lịch tới khách hàng hiện tại và các khách hàng tiềm năng (khách hàng đến trực tiếp văn phòng làm việc, không telesales, không đi thị trường)<br>
+            - Chăm sóc khách hàng tiềm năng của công ty, hỗ trợ khách hàng kí kết hợp đồng.<br>
+            - Khai thác nhu cầu và thuyết phục khách hàng sử dụng dịch vụ du lịch của công ty<br>
+            - Thực hiện các công việc theo sự phân công của Quản lý.
+        </p>
+        <h2>Yêu cầu ứng viên</h2>
+        <ul>
+            <li>Yêu thích và đam mê tư vấn</li>
+            <li>Chịu được áp lực công việc</li>
+            <li>Tự tin và có kỹ năng giao tiếp, đàm phán và thuyết trình tốt</li>
+            <li>Không yêu cầu kinh nghiệm</li>
+            <li>Ngoại hình ưa nhìn là một lợi thế</li>
+        </ul>
+        <h2>Quyền lợi</h2>
+        <p>
+            Thu nhập: Lương cứng 6.500.000 – 8.500.000 + hoa hồng (7% trên tổng doanh thu) + Hotbonus + Thưởng (tuần, tháng), tổng thu nhập lên tới 20.000.000 - 70.000.000 Triệu<br>
+            - Chính sách bonus lũy tiến, rõ ràng, minh bạch, chỉ trả theo tháng cùng với lương (Thu nhập đảm bảo 20tr đổ lên)<br>
+            - Đầy đủ các chế độ bảo hiểm, phúc lợi, chế độ thai sản, nhiều ưu đãi cho nhân viên gắn bó và đóng góp nhiều cho công ty<br>
+            - Được tham gia đầy đủ party, sinh nhật, liên hoan, du lịch,...<br>
+            - Việc nhẹ, lương cao, làm việc với sếp dễ tính<br>
+            - Môi trường làm việc trẻ trung, năng động, chuyên nghiệp<br>
+            - Cơ hội thăng tiến cao
+        </p>
+        <h2>Địa điểm làm việc</h2>
+        <p>
+            - Hồ Chí Minh: Tầng 12A Toà Pearl 5, số 05 Lê Quý Đôn, phường Võ Thị Sáu, Quận 3<br>
+            - Hà Nội: Tòa nhà Peakview số 36 Hoàng Cầu, Phường Ô Chợ Dừa, Đống Đa
+        </p>
+        <h2>Cách thức ứng tuyển</h2>
+        <p>
+            Ứng viên nộp hồ sơ trực tuyến bằng cách bấm <a href="#" class="apply-button">Ứng tuyển ngay</a> dưới đây.
+        </p>
+    </div>
+</div>
+
+
+
+</script>
+</body>
+</html>
+
+
+

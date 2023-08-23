@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viet vip pro</title>
+</head>
+<body>
+
+   
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .image-container {
+      display: none;
+    }
+    .image-container.active {
+      display: block;
+    }
+    .pagination101 {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* ... (các phần CSS khác) ... */
+  
+  .pagination101 button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0 4px;
+    border-radius: 50%; /* Thêm border radius để làm tròn nút */
+    transition: background-color 0.3s, transform 0.2s; /* Thêm transition cho hiệu ứng */
+  }
+  
+  .pagination101 button:hover {
+    background-color: #0056b3; /* Thay đổi màu khi hover */
+    transform: scale(1.1); /* Thu nhỏ nút khi hover */
+  }
+  
+  .prevBtn, .nextBtn {
+    font-size: 20px;
+  }
+  
+  /* ... (các phần CSS khác) ... */
+  
+    .prevBtn, .nextBtn {
+      font-size: 20px;
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  </head>
+  <body>
+  <div class="image-container active">
+    <a href=""><img src="https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages.vietnamworks.com%2Flogo%2FLG_hrbn_119708.jpg&w=1920&q=75" alt="Image 1"></a>
+  </div>
+  <div class="image-container">
+    <a href=""><img src="https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages.vietnamworks.com%2Flogo%2Fmer_hrbn_123902.jpg&w=1920&q=75" alt="Image 2"></a>
+  </div>
+  <div class="image-container">
+    <a href="link3.html"><img src="https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages.vietnamworks.com%2Flogo%2Fcamcom_hrbn_124036.jpg&w=1920&q=75" alt="Image 3"></a>
+  </div>
+  
+  <div class="image-container">
+    <a href="link3.html"><img src="https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages.vietnamworks.com%2Flogo%2FVNW_hrbn_121603.jpg&w=1920&q=75" alt="Image 4"></a>
+  </div>
+  
+  <div class="image-container">
+    <a href="link3.html"><img src="https://www.vietnamworks.com/_next/image?url=https%3A%2F%2Fimages.vietnamworks.com%2Flogo%2Fchailease_hrbn1_122576.jpg&w=1920&q=75" alt="Image 4"></a>
+  </div>
+  <!-- Add more image-container divs for additional images -->
+  
+  <div class="pagination101">
+    <button class="prevBtn" onclick="changeImage(-1)">&#8249;</button>
+    <button class="nextBtn" onclick="changeImage(1)">&#8250;</button>
+  </div>
+  
+  <script>
+    let currentImage = 0;
+    const imageContainers = document.querySelectorAll('.image-container');
+  
+    function showImage(index) {
+      imageContainers.forEach(container => container.classList.remove('active'));
+      imageContainers[index].classList.add('active');
+    }
+  
+    function changeImage(step) {
+      currentImage += step;
+      if (currentImage < 0) {
+        currentImage = imageContainers.length - 1;
+      } else if (currentImage >= imageContainers.length) {
+        currentImage = 0;
+      }
+      showImage(currentImage);
+    }
+  
+    showImage(currentImage);
+  </script>
+
+
+
+
+
+
+
+
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    .pad-30 {
+        padding: 0 30px !important;
+    }
+    
+    /* header_page_1 */
+    
+    
+    .header__page1 {
+        height: 82px;
+        background-color:antiquewhite;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        
+    }
+    .header__page1__items1 .list__item {
+        display: inline-block;
+    }
+    .header__page1__items1-img {
+        width: 92px;
+    }
+    .header__page1__items1-nav {
+        
+        position: relative;
+        text-decoration: none;
+        color: #212f3f;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .235px;
+        line-height: 20px;
+        padding: 33px 20px;
+        line-height: 82px;
+    }
+    .header__page1__item1-btn{
+        padding: 16px 26px;
+        font-size: 17px;
+        border: 1px solid #00b14f;
+        color: #00b14f;
+        border-radius: 8px;
+        font-weight: 400;
+        margin: 0 7px;
+    }
+    .bt2__page1 {
+        background-color: #00b14f;
+        color: #fff;
+    }
+    .bt3__page1 {
+        background-color: #212f3f;
+        color: #fff;
+    }
+    /* hover_btn_header */
+    
+    .hoverr:hover {
+        opacity: 0.7;
+    }
+    
+    /* điều hướng việc làm */
+    
+    
+    .header__page1__nav-1-1 {
+        position: absolute;
+        width: 400px;
+        background-color: #fff;
+        border-radius: 6px;
+        display: none;
+        
+    }
+    
+    .header__page1__nav-1-div-1-link {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: #212f3f;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .235px;
+        padding: 16px 4px;
+        border-radius: 6px;
+        background-color: #f1ecec;
+        margin: 15px 15px;
+    }
+    
+    
+    .header__page1__nav-1-div-1-link i {
+        font-size: 16px;
+        color: #00b14f;
+    }
+    .header__page1__nav-1-div-1-link > i {
+        display: none;
+    }
+    .header__page1__nav-1-div-1-link i,
+    .header__page1__nav-1-div-1-link span {
+        padding: 0 10px;
+    }
+    
+    
+    /* hover điều hướng */
+    .header__page1__items1-nav:hover {
+        color: #00b14f;
+    }
+    .header__page1__items1-nav:hover  +.header__page1__nav-1-1 {
+        display: block;
+        animation: fadeIn 0.7s;
+    }
+    
+    .header__page1__nav-1-1:hover {
+        display: block;
+    }
+    
+    .header__page1__nav-1-div-1-link:hover {
+        color: #00b14f;
+    }
+    .header__page1__nav-1-div-1-link:hover > i {
+        display: inline-block;
+        animation: fadeIn 0.7s;
+    }
+    
+    
+    /* body-page1-1 */
+    .body-1-1 {
+       background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQljtJDUpi1LBHWPAl9RyubRH_8pz-5CzGfpQ&usqp=CAU);
+       background-repeat: no-repeat;
+       background-size: 100%;
+       height: 1000px
+    }
+    
+    /* animation  */
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .nen {
+        background-color: red;
+        width:100px;
+        size: 100px;
+
+    }
+    .ptu {
+        background-color: black;
+        size:200px;
+    }
+
+    .company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  .company {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .company img {
+    max-width: 100%;
+    max-height: 100px;
+    margin-bottom: 10px;
+  }
+  #pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .page-item {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  }
+  .arrow {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .company a {
+    text-decoration: none;
+    color: #333; /* Màu cho liên kết */
+    display: block; /* Hiển thị liên kết là khối */
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+
+.company h1{
+  font-size: 20px;
+}
+.company p {
+  font-size: 12px;
+}
+  .company-grid a:hover {
+    color:chocolate;
+  }
+
+
+  .body101 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #go_bro {
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .container101 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .company101 {
+    flex-basis: calc(20% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .company101 h2 {
+    margin-top: 10px;
+  }
+
+  /* Định dạng siêu liên kết */
+  .company101 a {
+    text-decoration: none;
+    color: #333; /* Màu cho liên kết */
+    display: block; /* Hiển thị liên kết là khối */
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+
+  /* Hiệu ứng hover */
+  .company101 a:hover {
+    color: #ff6600; /* Màu khi hover */
+  }
+ #tintuc_vl{
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom: 20px;
+ }
+
+
+    </style>
+
+
+
+   <script src="./asset/myjv.js"></script>
+   
+   
+   <h1 id="tintuc_vl">Tin tức việc làm</h1>
+   <div class="company-grid">
+     <div class="company">
+       <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/8/18/screen-shot-2023-08-18-at-225811-169237432242793003418.png" alt="Công Ty A">
+       <h1><a href="https://nld.com.vn/cong-doan/nhu-cau-lao-dong-thay-doi-theo-cong-nghe-20230818230426005.htm">Nhu cầu lao động thay đổi theo công nghệ</a></h1>
+       <p>Doanh nghiệp cần gì ở lao động phổ thông? Ngành nông nghiệp thiếu lao động chất lượng cao
+        </p>
+     </div>
+ 
+     <div class="company">
+       <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/8/16/6-chot6-1692188855721246336826.jpg" alt="Công Ty A">
+       <h1><a href="https://nld.com.vn/cong-doan/nhieu-thu-doan-lua-dao-viec-lam-20230816193022059.htm">Nhiều thủ đoạn lừa đảo việc làm</a></h1>
+       <p>Tránh bẫy mạo danh lừa đảo việc làm
+        Sinh viên dễ rơi vào bẫy lừa đảo việc làm</p>
+     </div>
+ 
+    
+     <div class="company">
+       <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/8/2/6-chot6-1690981262443873283039.jpg" alt="Công Ty A">
+       <h1><a href="https://nld.com.vn/cong-doan/tim-cong-viec-phu-hop-vua-suc-20230802200708499.htm">Tìm công việc phù hợp, vừa sức</a></h1>
+       <p>
+        Nhọc nhằn sinh viên làm thêm
+        Sinh viên xếp hàng phỏng vấn tìm việc</p>
+     </div>
+ 
+     <div class="company">
+       <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/7/27/14-baiphutr14-sodb-1690459098798766890753.png" alt="Công Ty A">
+       <h1><a href="https://nld.com.vn/cong-doan/co-hoi-viec-lam-tai-duc-20230727185839262.htm">Cơ hội việc làm tại Đức</a></h1>
+       <p>
+        Tuyển 160 điều dưỡng viên sang Đức làm việc
+        Lao động chất lượng cao làm việc tại Đức, lương 3.500 euro/tháng</p>
+     </div>
+     
+
+     <div class="company">
+      <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/7/26/ngay-hoi-viec-lam-da-nang-2-1690359852877174042147.jpg" alt="Công Ty A">
+      <h1><a href="https://nld.com.vn/cong-doan/200-co-hoi-viec-lam-cho-sinh-vien-da-nang-tai-tinh-wakayama-nhat-ban-20230726152945686.htm">Tìm nghề mới trong ngành cũ
+      </a></h1>
+      <p>
+     
+Người lao động cần hỗ trợ học nghề để chuyển đổi nghề, tìm việc làm mới
+Học nghề để không bị đào thải
+        </p>
+    </div>
+
+
+
+    <div class="company">
+      <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/7/18/6-gnam-16896861286691619090093.jpg" alt="Công Ty A">
+      <h1><a href="https://nld.com.vn/cong-doan/nganh-nghe-nao-tuyen-dung-nhieu-nhat-trong-quy-iii-20230718201819709.htm">Ngành nghề nào tuyển dụng nhiều nhất trong quý III?</a></h1>
+      <p>61% doanh nghiệp đang gặp khó trong tuyển dụng
+        Hà Nội, TP HCM tuyển dụng lao động số lượng lớn
+        </p>
+    </div>
+
+    
+    <div class="company">
+      <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/7/15/6-chot6-16894291023671318025485.jpg" alt="Công Ty A">
+      <h1><a href="https://nld.com.vn/cong-doan/lo-mat-viec-vi-ai-20230715205227456.htm">Lo mất việc vì AI?</a></h1>
+      <p>
+        AI có thể thay thế 85 triệu vị trí việc làm?
+        Khan hiếm nhân lực ngành trí tuệ nhân tạo</p>
+    </div>
+
+
+    <div class="company">
+      <img src="https://nld.mediacdn.vn/zoom/220_139/291774122806476800/2023/7/15/6-hdinh-1689429102372722925884.jpg" alt="Công Ty A">
+      <h1><a href="https://nld.com.vn/cong-doan/da-nang-tap-trung-ket-noi-cung-cau-lao-dong-20230715205502177.htm">Đà Nẵng: Kết nối cung cầu lao động
+      </a></h1>
+      <p>Đẩy mạnh kết nối cung - cầu lao động sau Tết
+        TP HCM nỗ lực kết nối cung - cầu lao động
+        </p>
+    </div>
+
+
+ 
+ 
+     <!-- Thêm các công ty khác -->
+   </div>
+   <div id="pagination">
+     <!-- Các nút phân trang sẽ được thêm vào đây bằng JavaScript -->
+   </div>
+
+
+   <script>
+    const companies = document.querySelectorAll('.company');
+    const itemsPerPage = 4;
+    let currentPage = 1;
+    
+    const pagination = document.getElementById('pagination');
+    
+    function displayCompanies(page) {
+      companies.forEach((company, index) => {
+        if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+          company.style.display = 'block';
+        } else {
+          company.style.display = 'none';
+        }
+      });
+    }
+    
+    function displayPagination() {
+      pagination.innerHTML = '';
+    
+      const totalPages = Math.ceil(companies.length / itemsPerPage);
+    
+      const prevArrow = document.createElement('span');
+      prevArrow.classList.add('page-item', 'arrow');
+      prevArrow.innerHTML = '&#8592;';
+      prevArrow.addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          displayCompanies(currentPage);
+          updateActivePage();
+        }
+      });
+      pagination.appendChild(prevArrow);
+    
+      const nextArrow = document.createElement('span');
+      nextArrow.classList.add('page-item', 'arrow');
+      nextArrow.innerHTML = '&#8594;';
+      nextArrow.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          displayCompanies(currentPage);
+          updateActivePage();
+        }
+      });
+      pagination.appendChild(nextArrow);
+    
+      updateActivePage();
+    }
+    
+    function updateActivePage() {
+      const pageItems = document.querySelectorAll('.page-item');
+      pageItems.forEach((item, index) => {
+        if (index === 0 && currentPage === 1) {
+          item.style.visibility = 'hidden';
+        } else if (index === pageItems.length - 1 && currentPage === Math.ceil(companies.length / itemsPerPage)) {
+          item.style.visibility = 'hidden';
+        } else {
+          item.style.visibility = 'visible';
+        }
+      });
+    }
+    
+    displayCompanies(currentPage);
+    displayPagination();
+    </script>
+   
+   <header id="go_bro">
+    
+  
+
+
+    <footer>
+      <div class="contact-info">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <p class="contact-heading">Liên hệ với chúng tôi</p>
+        <p><i class="fas fa-home"></i> 123 Main Street, City, Country</p>
+        <p><i class="fas fa-envelope"></i> Email: contact@example.com</p>
+        <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
+      </div>
+      <div class="partner-logos">
+        <p class="partner-heading">Đối tác - Khách hàng</p>
+        <img src="https://images.vietnamworks.com/logo/mer_vip_109148.jpg" alt="Partner 1">
+        <img src="https://images.vietnamworks.com/logo/Mufg_vipsg_123830.png" alt="Partner 2">
+        <img src="https://images.vietnamworks.com/logo/acb_vip_124080.jpg" alt="Partner 3">
+        <img src="https://images.vietnamworks.com/logo/TLC_vip_123868.png" alt="Partner 4">
+        
+      </div>
+  
+      <div class="social-media">
+        <p class="social-heading">Mạng xã hội</p>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>&copy; Công Ty Cổ Phần Navigos Group Việt Nam</p>
+        <p>Tầng 20, tòa nhà E.Town Central, 11 Đoàn Văn Bơ, Phường 13, Quận 4, TP.HCM, Việt Nam</p>
+      </div>
+      
+    </div>
+  
+  
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer {
+    background-color: #001744; /* Màu nền xám đậm */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .contact-info, .partner-logos, .social-media {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .contact-heading, .partner-heading, .social-heading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p, .partner-logos p, .social-media p {
+    margin: 5px 0;
+  }
+  
+  .contact-info p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .partner-logos img {
+    width: 80px;
+    height: auto;
+    margin: 5px;
+  }
+  
+  .social-media a {
+    color: white; /* Thay đổi màu chữ thành trắng */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    margin: 0 10px; /* Khoảng cách giữa các biểu tượng */
+  }
+  
+  .social-media a i {
+    font-size: 24px;
+  }
+  
+  .social-media a i:hover {
+    opacity: 0.7;
+  }
+  
+  .contact-info {
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    color: #ff9900; /* Màu biểu tượng */
+    font-size: 20px;
+  }
+  
+  .icon i {
+    display: inline-block;
+  }
+  
+  /* Phần CSS mới cho dòng cuối và thông tin liên hệ */
+  .footer-bottom {
+    background-color: #001744; /* Màu nền đậm cho dòng cuối */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-bottom .contact-info-footer {
+    margin-top: 20px;
+  }
+  
+    </style>
+
+</body>
+</html>
